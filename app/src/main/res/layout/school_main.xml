@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/forms"
+        android:background="@drawable/help_button_background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details"
+        android:layout_marginTop="20dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:layout_marginBottom="20dp"
+        android:text="Student Classes"
+        android:textSize="15sp"
+        android:textColor="@drawable/help_button_text_color"
+        android:visibility="visible" />
+
+        <Button
+            android:id="@+id/notifications"
+            android:background="@drawable/help_button_background"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/details"
+            android:layout_marginTop="20dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:layout_marginBottom="20dp"
+            android:text="ADD NOTIFICATION"
+            android:textSize="15sp"
+            android:textColor="@drawable/help_button_text_color"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/edit"
+            android:background="@drawable/help_button_background"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/details"
+            android:layout_marginTop="20dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:layout_marginBottom="20dp"
+            android:text="EDIT DETAILS"
+            android:textSize="15sp"
+            android:textColor="@drawable/help_button_text_color"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/help"
+            android:background="@drawable/help_button_background"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/details"
+            android:layout_marginTop="20dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:layout_marginBottom="20dp"
+            android:text="HELP"
+            android:textSize="15sp"
+            android:textColor="@drawable/help_button_text_color"
+            android:visibility="visible" />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

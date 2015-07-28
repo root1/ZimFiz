@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">ZimFiz</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="form">
+        <item>Form 1</item>
+        <item>Form 2</item>
+        <item>Form 3</item>
+        <item>Form 4</item>
+        <item>Form 5</item>
+        <item>Form 6</item>
+    </string-array>
+
+    <string-array name="religion">
+        <item>Religion</item>
+        <item>Catholic</item>
+        <item>Pentecostal</item>
+        <item>Muslim</item>
+        <item>Traditional</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="term">
+        <item>Term 1</item>
+        <item>Term 2</item>
+        <item>Term 3</item>
+    </string-array>
+
+    <string-array name="payment">
+        <item>Ecocash</item>
+        <item>Telecash</item>
+        <item>ZimSwitch</item>
+        <item>Visa Card</item>
+        <item>Master Card</item>
+    </string-array>
+
+    //primary
+
+    <string-array name="grade">
+        <item>Grade 1</item>
+        <item>Grade 2</item>
+        <item>Grade 3</item>
+        <item>Grade 4</item>
+        <item>Grade 5</item>
+        <item>Grade 6</item>
+        <item>Grade 7</item>
+    </string-array>
+
+
+    <string-array name="type">
+        <item>University</item>
+        <item>College</item>
+        <item>High School</item>
+        <item>Primary School</item>
+
+    </string-array>
+
+    <string-array name="pterm">
+        <item>Term 1</item>
+        <item>Term 2</item>
+        <item>Term 3</item>
+    </string-array>
+//college
+    <string-array name="year">
+        <item>Year 1</item>
+        <item>Year 2</item>
+        <item>Year 3</item>
+        <item>Year 4</item>
+        <item>Year 5</item>
+        <item>Year 6</item>
+    </string-array>
+    <string-array name="cterm">
+        <item>Term 1</item>
+        <item>Term 2</item>
+        <item>Term 3</item>
+    </string-array>
+
+//universiy
+    <string-array name="part">
+        <item>Part 1</item>
+        <item>Part 2</item>
+        <item>Part 3</item>
+        <item>Part 4</item>
+        <item>Part 5</item>
+        <item>Masters</item>
+        <item>Doctorate</item>
+    </string-array>
+    <string-array name="semester">
+        <item>Semester 1</item>
+        <item>Semester 2</item>
+    </string-array>
+
+
+    <string name="original_category">Original Category</string>
+    <string name="original_preference">Original Preference</string>
+    <string name="original_checkbox_preference">Original CheckBox Preference</string>
+    <string name="original_summary">Original Summary</string>
+    <string name="original_summary_with_icon">Original Summary + Icon</string>
+    <string name="original_checkbox_key">original_checkbox_key</string>
+    <string name="original_checkbox_summary_on">Original CheckBox Summary On</string>
+    <string name="original_checkbox_summary_off">Original CheckBox Summary Off</string>
+    <string name="original_switch_preference">Original Switch Preference</string>
+    <string name="original_switch_preference_on">Original Switch Summary On</string>
+    <string name="original_switch_preference_off">Original Switch Summary Off</string>
+
+    <string name="material_category">Material Category</string>
+    <string name="material_preference">Material Preference</string>
+    <string name="material_checkbox_preference">Material CheckBox Preference</string>
+    <string name="material_summary">Material Summary</string>
+    <string name="material_summary_with_icon">Material Summary + Icon</string>
+    <string name="material_checkbox_key">material_checkbox_key</string>
+    <string name="material_checkbox_summary_on">Material CheckBox Summary On</string>
+    <string name="material_checkbox_summary_off">Material CheckBox Summary Off</string>
+    <string name="material_switch_preference">Material Switch Preference</string>
+    <string name="material_switch_preference_on">Material Switch Summary On</string>
+    <string name="material_switch_preference_off">Material Switch Summary Off</string>
+    <string name="payvia">Pay Via</string>
+    <string name="title_activity_form_one_place">Form One Place</string>
+
+</resources>

@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+
+    <item
+        android:id="@+id/notifications"
+        android:orderInCategory="100"
+        android:title="Notifications"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/details"
+        android:orderInCategory="100"
+        android:title="Edit Details"
+        app:showAsAction="never" />
+
+</menu>

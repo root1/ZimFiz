@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/accountDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="3dp"
+            android:text="Apply To"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_margin="5dp"
+            android:background="#2196f3" />
+
+
+        <AutoCompleteTextView
+            android:inputType="textAutoComplete|textAutoCorrect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Subject One"
+            android:id="@+id/subject_one" />
+
+        <AutoCompleteTextView
+            android:inputType="textAutoComplete|textAutoCorrect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Subject Two"
+            android:id="@+id/subject_two" />
+
+        <AutoCompleteTextView
+            android:inputType="textAutoComplete|textAutoCorrect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Subject Three"
+            android:id="@+id/subject_three" />
+
+        <AutoCompleteTextView
+            android:inputType="textAutoComplete|textAutoCorrect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Subject Four"
+            android:id="@+id/subject_four" />
+
+
+
+        <Button
+            android:id="@+id/btncontinue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/details"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/help_button_background"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:text="Continue"
+            android:textColor="@drawable/help_button_text_color"
+            android:textSize="15sp"
+            android:visibility="visible" />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+

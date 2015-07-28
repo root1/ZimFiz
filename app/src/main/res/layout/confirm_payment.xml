@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <com.afollestad.silk.views.text.SilkTextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+
+                android:text="Transaction Summary"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_margin="5dp"
+                android:background="#2196f3" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingTop="5dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="Student Name:"
+                        android:textSize="16dp" />
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:id="@+id/studentName"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="Hopewell Mutanda"
+                        android:textSize="16dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="School Name:"
+                        android:textSize="16dp" />
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:id="@+id/schoolName"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:text="ZRP High School"
+                        android:textSize="16dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="Class:"
+                        android:textSize="16dp" />
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:id="@+id/studentClass"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:text="Form 1: Term 2"
+                        android:textSize="16dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="Bank Name:"
+                        android:textSize="16dp" />
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:id="@+id/bankName"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:text="Standard Chatered"
+                        android:textSize="16dp" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="Account Name"
+                        android:textSize="16dp" />
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:id="@+id/accountName"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:text="ZRP High School"
+                        android:textSize="16dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="Account Number"
+                        android:textSize="16dp" />
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:id="@+id/accountNumber"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:text="83349340138302"
+                        android:textSize="16dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="Amount Paid"
+                        android:textSize="16dp" />
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:id="@+id/amountPaid"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:text="$US 500"
+                        android:textColor="#2196f3"
+                        android:textSize="16dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="Charge:"
+                        android:textSize="16dp" />
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:id="@+id/charge"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:text="$US 3"
+                        android:textColor="#FF4444"
+                        android:textSize="16dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="Amount Payable"
+                        android:textSize="16dp" />
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:id="@+id/amountPayable"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:text="$US 497"
+                        android:textColor="#99CC00"
+                        android:textSize="16dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="Paid Via:"
+                        android:textSize="16dp" />
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:id="@+id/paymentMethod"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:text="Ecocash"
+                        android:textSize="16dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:text="Paid By"
+                        android:textSize="16dp" />
+
+                    <com.afollestad.silk.views.text.SilkTextView
+                        android:id="@+id/paidBy"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:text="Hopewell Mutanda"
+                        android:textSize="16dp" />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btncontinue"
+                android:background="@drawable/help_button_background"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/details"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:layout_marginBottom="20dp"
+                android:text="Continue"
+                android:textSize="15sp"
+                android:textColor="@drawable/help_button_text_color"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

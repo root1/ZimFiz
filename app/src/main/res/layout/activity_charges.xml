@@ -1,0 +1,35 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fees: ZimFiz charges are fixed 0.07% for every transaction of tuition fees paid. For these lowest rates terms and conditions apply" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

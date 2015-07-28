@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.zimfiz.zimfiz" >
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <meta-data
+        android:name="android.app.default_searchable"
+        android:value="fragments.SearchResults" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        <activity
+            android:name=".Login"
+            android:label="ZimFiz"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="school.SchoolMain"
+            android:label="Admin"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="fragments.SelectSchool"
+            android:label="Select School"
+            android:launchMode="singleTop"
+            android:noHistory="true"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HighSchoolPayment" />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="fragments.SelectSchool" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="admin.Schools"
+            android:label="Select School"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="admin.AdminMainActivity" />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="admin.Schools" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="admin.SchoolsAddAccount"
+            android:label="Add School Accounts"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="admin.AdminMainActivity" />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="admin.SchoolsAddAccount" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="admin.Banks"
+            android:label="Banks"
+            android:launchMode="singleTop"
+            android:noHistory="true"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="admin.AdminMainActivity" />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="admin.Banks" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="admin.SelectBank"
+            android:label="Banks"
+            android:launchMode="singleTop"
+            android:noHistory="true"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="admin.AdminMainActivity" />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="admin.SelectBank" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="school.Classes"
+            android:label="Search Student"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="school.HighSchool" />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="school.Classes" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="fragments.SearchResults"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name="fragments.Profile" />
+        <activity
+            android:name=".HighSchoolPayment"
+            android:label="Make Payment"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.zimfiz.zimfiz.SelectInstition" />
+        </activity>
+        <activity
+            android:name="fragments.Contact"
+            android:label="Contact Us"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.zimfiz.zimfiz.MainActivity" />
+        </activity>
+        <activity
+            android:name="fragments.Charges"
+            android:label="Charges"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.zimfiz.zimfiz.MainActivity" />
+        </activity>
+        <activity
+            android:name="admin.AddSchool"
+            android:label="Add School"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="admin.Schools" />
+        </activity>
+        <activity
+            android:name="admin.Enquiries"
+            android:label="Enquiries"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="admin.AdminMainActivity" />
+        </activity>
+        <activity
+            android:name="admin.Enquiry"
+            android:label="Enquiry"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="admin.Enquiries" />
+        </activity>
+        <activity
+            android:name="admin.CreateSchoolAccount"
+            android:label="Create Account"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="admin.AccountsList" />
+        </activity>
+        <activity
+            android:name="admin.AccountsList"
+            android:label="School Accounts"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="admin.SchoolsAddAccount" />
+        </activity>
+        <activity
+            android:name="admin.AddBank"
+            android:label="Add Bank"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="admin.Banks" />
+        </activity>
+        <activity
+            android:name="fragments.NotificationActivity"
+            android:label="View Notification"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.zimfiz.zimfiz.MainActivity" />
+        </activity>
+        <activity
+            android:name="school.AddNotification"
+            android:label="Add Notification"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="school.SchoolMain" />
+        </activity>
+        <activity
+            android:name="admin.EditContact"
+            android:label="Edit Information"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="admin.AdminMainActivity" />
+        </activity>
+        <activity
+            android:name="school.EditContact"
+            android:label="Edit Information"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="school.SchoolMain" />
+        </activity>
+        <activity
+            android:name=".ConfirmPayment"
+            android:label="Confirm Payment"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HighSchoolPayment" />
+        </activity>
+        <activity
+            android:name=".RegisterAccount"
+            android:label="Register Account"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.zimfiz.zimfiz.Login" />
+        </activity>
+        <activity
+            android:name="mockedActivity.Settings"
+            android:label="Register Account"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.zimfiz.zimfiz.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TransactionHistory"
+            android:label="Transaction History"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".SelectInstition"
+            android:label="Select Institution"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".PrimarySchoolPayment"
+            android:label="Make Payment"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SelectInstition" />
+        </activity>
+        <activity
+            android:name=".CollegePayment"
+            android:label="Make Payment"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SelectInstition" />
+        </activity>
+        <activity
+            android:name=".UniversityPayment"
+            android:label="Make Payment"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SelectInstition" />
+        </activity>
+        <activity
+            android:name="admin.AdminMainActivity"
+            android:label="Admin"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SelectInstition" />
+        </activity>
+        <activity
+            android:name="school.HighSchool"
+            android:label="School Admin"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="school.SchoolMain" />
+        </activity>
+        <activity
+            android:name="school.University"
+            android:label="School Admin"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="school.SchoolMain" />
+        </activity>
+        <activity
+            android:name="school.College"
+            android:label="School Admin"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="school.SchoolMain" />
+        </activity>
+        <activity
+            android:name="school.PrimarySchool"
+            android:label="School Admin"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="school.SchoolMain" />
+        </activity>
+        <activity
+            android:name="school.Help"
+            android:label="Help"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="school.SchoolMain" />
+        </activity>
+        <activity
+            android:name=".FormOnePlace"
+            android:theme="@style/AppTheme"
+            android:label="@string/title_activity_form_one_place" >
+        </activity>
+
+        <activity
+            android:name=".LowerSixPlace"
+            android:theme="@style/AppTheme"
+            android:label="Lower Six Place" >
+        </activity>
+
+        <activity
+            android:name=".TransferStudent"
+            android:theme="@style/AppTheme"
+            android:label="Transafer Student" >
+        </activity>
+        <activity
+            android:name=".ChooseSchool"
+            android:theme="@style/AppTheme"
+            android:label="Select Schools" >
+        </activity>
+    </application>
+
+</manifest>

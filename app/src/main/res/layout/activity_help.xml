@@ -1,0 +1,89 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="15dp">
+
+            <Button
+                android:id="@+id/call_us"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/help_button_background"
+                android:text="Call Us"
+                android:textColor="@drawable/help_button_text_color"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/email_us"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/help_button_background"
+                android:text="Email Us"
+                android:textColor="@drawable/help_button_text_color"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/feedback"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:background="@drawable/help_button_background"
+                android:text="Send us feedback"
+                android:textColor="@drawable/help_button_text_color"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/facebook"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/help_button_background"
+                android:text="Facebook"
+                android:textColor="@drawable/help_button_text_color"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/twitter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/help_button_background"
+                android:text="Twitter"
+                android:textColor="@drawable/help_button_text_color"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/skype"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/help_button_background"
+                android:text="Skype"
+                android:textColor="@drawable/help_button_text_color"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,83 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#eeeeee"
+    android:paddingBottom="10dp"
+    android:layout_height="match_parent" >
+    
+   <LinearLayout 
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:gravity="center_horizontal"
+    android:layout_margin="12dp"
+    android:layout_height="match_parent">
+
+       <ImageView
+           android:id="@+id/imageView1"
+           android:layout_marginTop="10dp"
+           android:layout_width="70dp"
+           android:layout_height="70dp"
+           android:src="@drawable/ic_launcher" />
+
+      <com.afollestad.silk.views.text.SilkTextView
+           android:id="@+id/textView1"
+           android:layout_marginTop="20dp"
+           android:layout_width="wrap_content"
+           android:textSize="20sp"
+           android:textStyle="bold"
+           android:layout_height="wrap_content"
+           android:text="S.O.S. Or Just Curious?" />
+
+       <TextView
+           android:id="@+id/textView2"
+           android:layout_marginTop="20dp"
+           android:gravity="center"
+           android:textColor="@android:color/darker_gray"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Rain or Shine, early breakfast or last cocktail. We are here for you and just a tap away" />
+
+       <Button
+           android:id="@+id/call_us"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="40dp"
+           android:textColor="@drawable/help_button_text_color"
+           android:background="@drawable/help_button_background"
+           android:text="Contact Us"
+           android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/email_us"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@drawable/help_button_text_color"
+            android:background="@drawable/help_button_background"
+            android:text="Charges"
+            android:textStyle="normal" />
+         <Button
+           android:id="@+id/feedback"
+           android:background="@drawable/help_button_background"
+           android:layout_marginTop="10dp"
+           android:textStyle="normal"
+           android:textColor="@drawable/help_button_text_color"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:text="Help" />
+
+          <com.afollestad.silk.views.text.SilkTextView
+             android:id="@+id/website"
+             android:layout_marginTop="20dp"
+             android:textSize="12sp"
+             android:textColor="@android:color/darker_gray"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="www.zimfiz.co.zw" />
+
+   </LinearLayout>
+
+   
+
+</ScrollView>
